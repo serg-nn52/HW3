@@ -168,10 +168,10 @@ header .buttons a:first-child{
 	margin-right: 50px;
 }
 
-header .buttons a:hover {
+header .buttons a:hover, footer .buttons a:hover {
 	color: #5e42b0;
 	background-color: #ffffff;
-}
+} 
 
 header .menu li a:hover {
 	color: #ffffff;
