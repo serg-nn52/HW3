@@ -86,7 +86,7 @@ header .right_text {
 	margin-top: 65px;
 }
 header h1 {
-	font-size: 90px;;
+	font-size: 90px;
 	font-family: 'Proxima Nova Bold';
 	color: #ffffff;
 	margin-top: 25vh;
@@ -292,17 +292,53 @@ header .menu li a:hover {
 footer {
 		height: 100vh;
 		width: 100%;
-		background-image: url(./images/footer.png);
+		background-image: url(./images/footer_new.png);
 		background-size: cover;
 		max-height: 960px;
 		position: relative;
 		text-align: center;
 	
 }
+.niz {
+	width: 100%;
+	background-image: url(./images/niz.png);
+	vertical-align: middle;
+	height: 110px;
+	position: absolute;
+	bottom: 0;
+	text-align: center;
+	
+}
+footer .logo {
+	margin-top: 40px;
+	margin-left: 0px;
+	display: inline-block;
+	float: left;
+	
+}
 
+footer .niz i {
+	color: #ffffff;
+	font-size: 28px;
+	
+	
+}
+
+footer .niz a {
+	margin: 41px 15px 0 15px;
+	display: inline-block;
+}
+footer .niz p {
+	font-family: 'Proxima Nova Regular';
+	font-size: 20px;
+	color: #ffffff;
+	display: inline-block;
+	float: right;
+	margin-top: 45px;
+}
 .pod {
 	width: 100%;
-	margin-top: 230px;
+	margin-top: 100px;
 	display: inline-block;
 	position: relative;
 }
@@ -337,21 +373,28 @@ footer .pod p span {
 }
 
 footer .buttons {
-	margin-top:155px;
+	margin-top: 16vh;
 	
 }
 footer .buttons a:first-child{
 	margin-right: 50px;
 }
 
+footer li {
+	display: inline-block;
+}
+
+footer li:first-child {
+	margin-left: 10%;
+}
 .line1 {
-	width: 450px;
+	width: 350px;
 	height: 5px;
 	background-color: #5e42b0;
 	border-radius: 3px;
 	position: absolute;
 	transform: rotate(-45deg);
-	top: 30px;
+	top: 50px;
 	left: 50%;
 	z-index: 3;
 }
@@ -365,7 +408,177 @@ footer .buttons a:first-child{
 	top: 40px;
 	left: 28%;
 	z-index: 3;
-	
+
+}
+
+.container2 .block1 h2, .container3 .block1 h2 {
+	color: #e7e7e7;
+	font-family: 'Proxima Nova Bold';
+	text-transform: uppercase;
+	margin-top: 114px;
+	margin-bottom: 56px;
+	font-size: 90px;
+}
+
+.container2 img {
+	float: left;
+	margin-left: 9%;
+	margin-top: -70px;
+	max-width: 55%;
+	max-height: 1060px;
+}
+.container2 .text_center, .container3 .text_center {
+	color: #c1c1c1;
+	font-family: 'Proxima Nova Bold';
+	text-transform: uppercase;
+	font-size: 36px;
+	margin-bottom: 30px;
+}
+.container2 .text_center span, .container3 .text_center span {
+	font-size: 18px;
+	border-bottom: 5px solid #5e42b0;
+	color: #000000;
+	position: relative;
+	top: -10px;
+}
+.container2 .text_bottom, .container3 .text_bottom  {
+	font-size: 20px;
+	color: black;
+	padding-bottom: 60px;
+}
+
+.container2 .block3 .text_center span {
+	font-size: 18px;
+	border-bottom: 5px solid #efefef;
+	color: #000000;
+	position: relative;
+	top: -10px;
+}
+.container2 .block3 .text_bottom, .container3 .block3 .text_bottom {
+	font-size: 20px;
+	color: #ffffff;
+	padding-bottom: 60px;
+}
+
+.container2 .block2 {
+	background-color: #f6f4fa;
+}
+.container2 .block3 {
+	background-color: #5e42b0;
+}
+.container3 .block3 .text_center span {
+	font-size: 18px;
+	border-bottom: 5px solid #ffffff;;
+	color: #9173e6;
+	position: relative;
+	top: -10px;
+}
+
+.container3 {
+	position: relative;
+}
+
+.pl {
+	position: absolute;
+	top: -140px;
+	right: 3%;
+	max-width: 90%;
+}
+
+.container2 .block2 .text_center, .container2 .block3 .text_center, 
+.container3 .block2 .text_center, .container3 .block3 .text_center {
+	padding-top: 65px;
+}
+
+.container3 .block1 p, .container3 .block2 p, .container3 .block3 p {
+	max-width: 50%;
+}
+
+.container3 .block3 {
+	background-color: #0a0e34;
+}
+
+@media(max-width:1550px){
+	.container2 img {
+		margin-left: 0;
+	}
+}
+@media(max-width:1250px) {
+	header h1, header h4{ 
+		font-size: 70px;
+	}
+	.container2 img {
+		width: 50%;
+	}
+}
+@media(max-width:1024px) {
+	header h1, header h4, .container2 .block1 h2 {
+		font-size: 56px;
+	}
+	header .menu li a {
+		padding: 0 10px;
+	}
+}
+@media(min-height: 960px) {
+	header h1 {
+	margin-top: 305px;
+}
+
+header .buttons {
+	margin-top: 220px;
+}
 }
 
 
+@media(max-width:760px){
+	header h1, header h4, .container2 .block1 h2 {
+		font-size: 44px;
+	}
+	header .menu li a {
+		padding: 0 5px;
+	}
+	header .buttons a {
+		display: block;
+		margin: 0 auto;
+	}
+	header .buttons a:first-child {
+		display: block;
+		margin-right: auto;
+		margin-bottom: 20px;
+	}
+}
+@media(max-width:576px){
+	header h1, header h4, .container2 .block1 h2 {
+		font-size: 33px;
+	}
+	.container2 img {
+		margin-left: auto;
+		margin-right: auto;
+		float: none;
+		display: block;
+		margin-top: 10px;
+	}
+}
+@media(max-width:425px){
+	header h4 {
+	float: none;
+	}
+	header .logo {
+		width: 35%;
+		margin-top: 25px;
+	}
+	header .right_text {
+		margin-top: 35px;
+		font-size: 12px;
+		
+	}
+	header h1 {
+		margin-top: 15vh;
+	}
+	header .buttons {
+		margin-top: 20vh;
+	}
+	header {
+		background-position-x: 45%;
+	}
+}
